@@ -24,7 +24,9 @@ func main() {
 		os.Exit(1)
 	}
 
-	f, err := os.Create(".gitignore")
+	fmt.Println("Creating .gitignore ...")
+
+	f, err := os.OpenFile(".gitignore", os.O_CREATE|os.O_EXCL, 0644)
 	if nil != err {
 		log.Fatal(err)
 
