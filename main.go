@@ -7,9 +7,25 @@ import (
 
 	"github.com/laurence-trippen/git-ignit/github"
 	"github.com/laurence-trippen/git-ignit/gitignit"
+	"github.com/mbndr/figlet4go"
+	"github.com/ttacon/chalk"
 )
 
 func main() {
+	ascii := figlet4go.NewAsciiRender()
+	renderOptions := figlet4go.NewRenderOptions()
+
+	renderOptions.FontColor = []figlet4go.Color{
+		figlet4go.ColorRed,
+	}
+
+	renderStr, _ := ascii.RenderOpts("Git Ignit", renderOptions)
+	fmt.Print(renderStr)
+	fmt.Print("\n")
+
+	fmt.Println(chalk.White.NewStyle().WithBackground(chalk.Yellow), " Version 1.0.0 ", chalk.Reset)
+	fmt.Print("\n")
+
 	if len(os.Args) < 2 {
 		fmt.Println("Please specify a .gitignore File!")
 		os.Exit(1)
