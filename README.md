@@ -18,3 +18,11 @@ Full-Name:
 
 The .gitignore file will be created in the current working / caller directory.
 Already existing .gitignore(s) won't be overwritten.
+
+### Todos
+
+* [ ] GitHub Workflow CI/CD
+* [ ] File Overwrite optional option
+* [ ] Cache template files
+* [ ] Add & manage custom templates
+* [ ] Unit-Tests
