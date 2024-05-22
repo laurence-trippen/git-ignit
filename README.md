@@ -8,6 +8,17 @@ Download Github .gitnore templates superfassst!
 
 Coming soon...
 
+### Building
+
+`$ go build`
+`$ go install`
+
+### Testing
+
+In the projects root directory run:
+
+`$ go test -v ./...`
+
 ### Usage
 
 Shorthand:
@@ -16,8 +27,10 @@ Shorthand:
 Full-Name:
 `$ git-ignit Swift.gitignore`
 
-The .gitignore file will be created in the current working / caller directory.
-Already existing .gitignore(s) won't be overwritten.
+### Behaviour
+
+* The `.gitignore` file will be created in the current working / caller directory.
+* Already existing .gitignore(s) won't be overwritten.
 
 ### Todos
 
