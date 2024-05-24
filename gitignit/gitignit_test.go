@@ -9,3 +9,7 @@ func TestCompleteIgnoreName(t *testing.T) {
 		t.Errorf("Un-expected result %s. Expected Go.gitignore as result!", result)
 	}
 }
+
+func TestMeantToFail(t *testing.T) {
+	t.Error("Meant to fail!")
+}
