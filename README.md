@@ -4,14 +4,24 @@ Download Github .gitnore templates superfassst!
 
 ![screenshot](docs/img/gitignit-cli-win.png)
 
+### Applied Knowledge
+
+- [x] Building CLIs in Go
+- [x] GitHub Actions for CI/CD
+- [x] Go Cross-Compilation
+- [x] Simple Unit-Testing
+
 ### Installation
 
 Coming soon...
 
 ### Building
 
-`$ go build`
-`$ go install`
+```bash
+$ go build
+$ go install
+```
+
 
 ### Testing
 
@@ -34,7 +44,7 @@ Full-Name:
 
 ### Features
 
-- [*] GitHub Workflow CI/CD
+- [ ] GitHub Workflow CI/CD
   - [x] Build & Test Workflows on Pull Request
   - [x] Go Cross-Compile Artifacts Workflow on manual dispatch
   - [ ] Release workflow with SemVer & deployment for...
