@@ -18,21 +18,21 @@ jobs:
       - name: Install dependencies
         run: go get .
 
-      - name: Build
-        run: go build -v ./...
-
+      # Windows Cross-Compile Builds
       - name: Build for windows/amd64
         run: |
             env GOOS=windows GOARCH=amd64 
-            go build -v ./... -o git-ignit-windows-amd64.exe
+            go build -v -o git-ignit-windows-amd64.exe
 
-      - name: Test with Go
-        run: go test -json > TestResults.json
+      # Linux Builds
+      # TODO
+
+      # macOS Cross-Compile Builds?
+      # TODO
 
       - name: Upload Go test results
         uses: actions/upload-artifact@v4
         with:
           name: Test & Binary artifacts
           path: |
-            TestResults.json
             git-ignit-windows-amd64.exe
