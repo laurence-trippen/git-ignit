@@ -1,4 +1,4 @@
-name: Build Binary Artifacts
+name: Go Build Binary Artifacts
 
 on: workflow_dispatch
 
@@ -33,6 +33,6 @@ jobs:
       - name: Upload Go test results
         uses: actions/upload-artifact@v4
         with:
-          name: Test & Binary artifacts
+          name: windows-builds
           path: |
             git-ignit-windows-amd64.exe

@@ -32,10 +32,19 @@ Full-Name:
 * The `.gitignore` file will be created in the current working / caller directory.
 * Already existing .gitignore(s) won't be overwritten.
 
-### Todos
+### Features
 
-* [ ] GitHub Workflow CI/CD
+- [*] GitHub Workflow CI/CD
+  - [x] Build & Test Workflows on Pull Request
+  - [x] Go Cross-Compile Artifacts Workflow on manual dispatch
+  - [ ] Release workflow with SemVer & deployment for...
+    - [ ] Windows MSI & ZIP
+    - [ ] Windows WinGet?
+    - [ ] Windows Choco?
+    - [ ] Linux Debian Apt
+    - [ ] Linux Flatpak
+    - [ ] macOS HomeBrew
 * [ ] File Overwrite optional option
 * [ ] Cache template files
 * [ ] Add & manage custom templates
-* [ ] Unit-Tests
+* [X] Unit-Tests
